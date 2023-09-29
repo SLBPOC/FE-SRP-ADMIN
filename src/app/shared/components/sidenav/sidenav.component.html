@@ -1,10 +1,22 @@
 <mat-toolbar color="primary" class="example-toolbar">
-  <button mat-icon-button (click)="isExpanded = !isExpanded" class="menuButton"><mat-icon>menu</mat-icon></button>
+  <!-- <button mat-icon-button (click)="isExpanded = !isExpanded" class="menuButton"><mat-icon>menu</mat-icon></button> -->
 
-  <img _ngcontent-qeb-c370="" matbuttonicon="" (click)="left.open()" width="20" alt="avatar" class=""
-    src="./assets/app_icon.svg">
-  <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/Delfi_White.svg">
-  <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/divider.svg">
+  <!-- <img _ngcontent-qeb-c370="" matbuttonicon="" (click)="left.open()" width="20" alt="avatar" class=""
+    src="./assets/app_icon.svg"> -->
+  <div class="lFloat leftSec">
+  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 0C6.71544 0 0 6.71544 0 15C0 23.2846 6.71544 30 15 30C23.2846 30 30 23.2846 30 15C30 6.71544 23.2846 0 15 0ZM15.445 22.2002H11.5001C10.2919 22.2002 9.30312 21.2115 9.30312 20.0033V8.40003H15.7165C18.0503 8.40003 20.2342 9.64952 21.33 11.7103C24.1142 16.9446 20.3933 22.2002 15.445 22.2002Z" fill="white"/>
+  </svg>      
+  <!-- <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/Delfi_White.svg"> -->
+  <svg width="1" height="16" viewBox="0 0 1 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1" height="16" fill="white"/>
+    </svg>
+    
+  <span class="toolbaar-title">Agora Core Service - Admin Portal</span>
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M19 10.9487L17.9436 11.999L9.99805 4.10058L2.05642 12L1 10.9497L9.99805 2L19 10.9487ZM19 16.9487L17.9436 17.999L9.99805 10.1006L2.05642 18L1 16.9497L9.99805 8L19 16.9487Z" fill="#EBECF2"/>
+    </svg>
+    
   <!-- <mat-form-field>
     <mat-select value="Domain" placeholder="Sucker Rod Pump">
       <mat-option value="domain">Sucker Rod Pump</mat-option>
@@ -23,17 +35,42 @@
       </li>
     </ul> 
   </mat-menu>-->
-  <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/icon-home.svg">
+  <!-- <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/icon-home.svg"> -->
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.18281 0L0 6.15781L0.689063 7.24297L1.34844 6.74609V16H5.58906H10.4344H14.6742V6.76719L15.2797 7.24609L16 6.18516L8.18281 0ZM9.22344 14.6812H6.8V9.40625H9.22344V14.6812ZM13.4633 14.6812H10.4344V8.08828H5.58906V14.6812H2.56016V5.83359L8.15938 1.62109L13.4633 5.81094V14.6812Z" fill="#ADB1C7"/>
+    </svg>  
+  </div>  
   <span class="flex-fill"></span>
   <div class="rFloat rightSec">
     <ul class="righttoolBar">
       <li>
-        <div class="wrapper">
+        <!-- <div class="wrapper">
           <div class="searchBar">
             <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
             <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
               <img matbuttonicon="" alt="" class="" src="./assets/images/close.svg">
             </button>
+          </div>
+        </div> -->
+        <div class="box">
+          <div class="container-2">
+              <span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search-icon"><circle fill="none" stroke="#EBECF2" stroke-width="2" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#EBECF2" stroke-width="2" d="M14,14 L18,18 L14,14 Z"></path></svg></span>
+              <input type="search" id="search" placeholder="Search" />
+          <!-- <svg width="16" height="16" fill="#0BA1F5" class="icon2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+            </g>
+          </g>
+          </svg> -->
+        
           </div>
         </div>
       </li>
@@ -56,7 +93,7 @@
       <li>
         <img (click)="openFullscreen()" matbuttonicon="" alt="" class="" src="./assets/images/icon-expand.svg">
       </li>
-      <li><mat-slide-toggle (click)="toggleTheme()">Slide Toggle</mat-slide-toggle></li>
+      <!-- <li><mat-slide-toggle (click)="toggleTheme()">Slide Toggle</mat-slide-toggle></li> -->
     </ul>
 
     <mat-menu #menunotification="matMenu" class="panelMenu notification-menu">

@@ -1,6 +1,8 @@
 //Grid Table common Css
 .tableContainer {
-    padding: 15px;
+  background-color: #FFFFFFE5;
+  border: 1px solid #CCCFDE;
+  border-radius: 8px;
     .mat-mdc-row {
       td {
         //   &:first-child {
@@ -8,7 +10,7 @@
         //   }
   
         a {
-          color: #fff;
+          color: #0014DC;
           text-decoration: none;
         }
       }
@@ -17,25 +19,21 @@
         border-bottom-width: 1px;
       }
     }
-  
-    .mat-mdc-table {
-      background: rgba(19, 22, 41, 0.9) !important;
-    }
+
   
     .mdc-data-table__cell {
       // padding: 15px !important;
-      color: #adb1c7 !important;
+      color: #505575 !important;
       font-size: 16px !important;
       font-weight: 500;
     }
   
     .mdc-data-table__header-cell {
       padding: 16px !important;
-      font-size: 16px;
-      line-height: 16px;
-      color: #ebecf2;
+      font-size: 14px;
+      line-height: 14px;
+      color: #22263D;
       font-weight: 500;
-      background: #131629;
     }
   
     .mat-sort-header-content {
@@ -44,7 +42,6 @@
     }
   
     .tabletophead {
-      background-color: rgba(19, 22, 41, 0.9);
       padding: 10px 20px;
       display: flex;
   
@@ -56,7 +53,7 @@
         h2 {
           margin: 0px;
           font-size: 18px;
-          color: #fff;
+          color: #22263D;
         }
       }
   
@@ -130,45 +127,7 @@
           }
         }
   
-        .searchBar {
-          width: auto;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-  
-          #searchQueryInput {
-            width: 330px;
-            height: 36px;
-            background: #080912;
-            outline: none;
-            border: 1px solid #fff;
-            border-radius: 20px;
-            padding: 0 10px 0px 45px;
-            font-size: 1rem;
-            border-color: #8b90ad;
-            font-size: 16px;
-            color: #adb1c7;
-            background-image: url("./assets/images/search-icon.svg");
-            background-repeat: no-repeat;
-            background-position: 12px 10px;
-          }
-  
-          #searchQuerySubmit {
-            margin-left: -2.5rem;
-            background: none;
-            border: none;
-            outline: none;
-          }
-  
-          .mat-mdc-form-field-icon-prefix > .mat-icon {
-            padding: 8px;
-          }
-  
-          .mat-mdc-form-field-infix {
-            min-height: 36px;
-            padding: 8px 12px;
-          }
-        }
+        
   
         .headIcons {
           display: flex;
@@ -192,6 +151,7 @@
         }
       }
     }
+    
   
     .high-priorityline {
       width: 16px;
@@ -220,11 +180,23 @@
     }
   
     .mat-mdc-paginator {
-      background-color: rgba(19, 22, 41, 0.9);
   
-      .mat-mdc-form-field {
-        background-color: #000;
-      }
+      .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
+        border-top-left-radius: var(--mdc-shape-small, 8px);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: var(--mdc-shape-small, 8px);
+    }
+    .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
+      border-top-left-radius: 0;
+      border-top-right-radius: var(--mdc-shape-small, 8px);
+      border-bottom-right-radius: var(--mdc-shape-small, 8px);
+      border-bottom-left-radius: 0;
+    }
+    .mat-mdc-paginator .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
   
       .mat-mdc-paginator-page-size-label {
         display: none !important;
@@ -241,10 +213,6 @@
     .mdc-list {
       padding: 0 !important;
     }
-  }
-  
-  .mat-mdc-paginator {
-    background-color: rgba(19, 22, 41, 0.9);
   }
   
   // select filter css
@@ -529,13 +497,7 @@
           font-family: "SLB SANS MEDIUM";
         }
   
-        .mat-mdc-row {
-          td {
-            a {
-              color: rgba(80, 85, 117, 1) !important;
-            }
-          }
-        }
+
   
         .mat-sort-header-arrow {
           color: rgba(5, 20, 100, 1);
