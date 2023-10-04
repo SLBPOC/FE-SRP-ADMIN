@@ -150,6 +150,13 @@
           }
         }
       }
+      .left-sec, .center-sec {
+        font-size: 18px;
+        color: #22263D;
+        text-align: left;
+        font-weight: 700;
+        line-height: 30px;
+      }
     }
     
   
@@ -443,6 +450,8 @@
             }
           }
         }
+        
+  
   
         .searchBar {
           #searchQueryInput {

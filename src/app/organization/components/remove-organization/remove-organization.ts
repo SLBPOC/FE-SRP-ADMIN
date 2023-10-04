@@ -3,9 +3,9 @@ import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-    selector: 'remove-confirmation',
-    templateUrl: 'remove-confirmation.html',
+    selector: 'remove-organization',
+    templateUrl: 'remove-organization.html',
   })
-  export class RemoveConfirmationDialog {
-    constructor(public dialogRef: MatDialogRef<RemoveConfirmationDialog>) {}
+  export class RemoveOrganizationDialog {
+    constructor(public dialogRef: MatDialogRef<RemoveOrganizationDialog>) {}
   }

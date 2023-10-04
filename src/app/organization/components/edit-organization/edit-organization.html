@@ -1,0 +1,62 @@
+<div class="main-container-organization">
+  <div class="container-title">
+    <div class="container-title-content">
+      <span>
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7.89746 12.919L2.86035 7.76407H19.9995V6.23543H2.86035L7.90039 1.08203L6.84131 0L0 7.00075L6.84082 14L7.89746 12.919Z"
+            fill="#EBECF2"></path>
+        </svg>
+      </span>
+      <h1>Edit Organization</h1>
+    </div>
+    <!-- <div class="d-flex">
+      <div class="searchBar">
+        <input id="searchQueryInput" #searchQueryInput type="text" name="searchQueryInput" placeholder="Search" />
+        <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 0.851953L11.1498 0L6 5.16094L0.850195 0L0 0.851953L5.14981 6.01289L0.0257813 11.148L0.875977 12L6 6.86484L11.124 12L11.9742 11.148L6.8502 6.01289L12 0.851953Z"
+              fill="#505575"  />
+          </svg>
+        </button>
+      </div>
+      <button mat-flat-button="" class="action-btn-info margin-l-15" tabindex="0" ng-reflect-router-link="" >Add Organization</button>
+    </div> -->
+  </div>
+  <div class="row margin-0">
+    <div class="col-md-12 org-list-sec">
+      <div class="tableContainer form-field-sec">
+        <div class="label">Name</div>
+          <mat-form-field appearance="outline" >                       
+              <input matInput placeholder="">
+          </mat-form-field>
+          <div class="select-field margin-t-10 margin-l-m10">
+            <mat-checkbox >Is Active</mat-checkbox>
+          </div>
+          <div class="select-field margin-t-10 content">
+            Type (not modifiable): Service Organization<br>
+            Nimbus Group Ids: (not applicable to service organizations)
+          </div>
+          <div class="select-field margin-t-10">
+            <div class="label">Allowed Username Realms (ex. slb.com)</div>
+            <mat-form-field appearance="outline" >                       
+                <input matInput placeholder="">
+            </mat-form-field>
+            <span class="hint">Comma separated list</span>
+          </div>
+          <div class="select-field margin-t-10">
+            <div class="input-lbl">Description</div>
+              <mat-form-field class="widthp100">
+                  <textarea matInput value=""
+                      placeholder="Useful information"></textarea>
+              </mat-form-field>
+          </div>
+          <div class="dialog-action-btn-grp">
+            <button mat-flat-button class="action-btn">Cancel</button>
+            <button mat-flat-button class="action-btn active margin-l-10">save</button>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
