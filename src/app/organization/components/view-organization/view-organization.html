@@ -8,9 +8,9 @@
             fill="#EBECF2"></path>
         </svg>
       </span>
-      <h1>Organizations</h1>
+      <h1>Organization</h1>
     </div>
-    <div class="d-flex">
+    <!-- <div class="d-flex">
       <div class="searchBar">
         <input id="searchQueryInput" #searchQueryInput type="text" name="searchQueryInput" placeholder="Search" />
         <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -21,52 +21,70 @@
           </svg>
         </button>
       </div>
-      <button mat-flat-button="" class="action-btn-info margin-l-15" tabindex="0" ng-reflect-router-link="" (click)="addOrgDialog('0ms', '0ms')">Add Organization</button>
+      <button mat-flat-button="" class="action-btn-info margin-l-15" tabindex="0" ng-reflect-router-link="" >Add Organization</button>
+    </div> -->
+  </div>
+  <div class="row margin-0">
+    <div class="col-md-12 org-list-sec">
+      <div class="tableContainer">
+        <div class="tabletophead justify-space">
+          <div class="left-sec">
+              Organization: Initech (Service Org)<br>
+              Allowed User Realms: (initect.com)
+          </div>
+          <div class="center-sec">State: Active<br>
+              Nimbus Group Ids: N/A
+          </div>
+          <div class="right-sec">
+            <button mat-icon-button class=" button-type-none margin-0">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.90137L15.0889 0L12.2549 2.83057L0 15.0615L0.0014648 20L4.87598 19.998L16.1885 8.70654L16.1904 8.70752L20 4.90137ZM17.8945 4.90234L16.1924 6.60449L13.3848 3.80225L15.0889 2.10107L17.8945 4.90234ZM4.2627 18.5078L1.5415 15.624L12.3311 4.85693L15.1357 7.65625L4.2627 18.5078Z" fill="#22263D"/>
+              </svg>
+            </button>              
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row margin-0">
     <div class="col-md-12 org-list-sec">
       <div class="tableContainer">
-        <div class="tabletophead">
+        <div class="tabletophead justify-space">
           <div class="lefthead">
-            <h2>Organization List</h2>
+            <h2>Business Units</h2>
           </div>
+          <button mat-flat-button="" class="action-btn-info margin-l-15" tabindex="0" ng-reflect-router-link="" >Add Business Unit</button>
         </div>
         <table mat-table [dataSource]="dataSource" matSort>
-          <!-- organization Name -->
-          <ng-container matColumnDef="organization_Name">
-             <th mat-header-cell *matHeaderCellDef mat-sort-header>Organization Name</th>
-             <td mat-cell *matCellDef="let element" id="organization_Name"> {{element.organization_Name}} </td>
+          <!-- Name -->
+          <ng-container matColumnDef="No">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>No</th>
+            <td mat-cell *matCellDef="let element"> {{element.No}} </td>
+         </ng-container>
+          <!-- Name -->
+          <ng-container matColumnDef="Name">
+             <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+             <td mat-cell *matCellDef="let element"> {{element.Name}} </td>
           </ng-container>
           <!--Type -->
-          <ng-container matColumnDef="type">
-             <th mat-header-cell *matHeaderCellDef mat-sort-header>Type</th>
-             <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+          <ng-container matColumnDef="State">
+             <th mat-header-cell *matHeaderCellDef mat-sort-header>State</th>
+             <td mat-cell *matCellDef="let element"> {{element.State}} </td>
           </ng-container>
-          <!-- status -->
-          <ng-container matColumnDef="status">
-             <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
-             <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+          <!-- contact_name -->
+          <ng-container matColumnDef="contact_name">
+             <th mat-header-cell *matHeaderCellDef mat-sort-header>Contact Name</th>
+             <td mat-cell *matCellDef="let element"> {{element.contact_name}} </td>
           </ng-container>
           <!-- realms -->
-          <ng-container matColumnDef="realms">
-             <th mat-header-cell *matHeaderCellDef mat-sort-header>Realms</th>
-             <td mat-cell *matCellDef="let element"> {{element.realms}} </td>
+          <ng-container matColumnDef="service_asset_group">
+             <th mat-header-cell *matHeaderCellDef mat-sort-header>Service / Asset Group</th>
+             <td mat-cell *matCellDef="let element"> {{element.service_asset_group}} </td>
           </ng-container>
-           <!-- nimbus group ids -->
-           <ng-container matColumnDef="nimbus_group_ids">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Nimbus Group Ids</th>
-            <td mat-cell *matCellDef="let element"> {{element.nimbus_group_ids}} </td>
-         </ng-container>
-         <!-- business_unit -->
-         <ng-container matColumnDef="business_unit">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Business Unit</th>
-          <td mat-cell *matCellDef="let element"> {{element.business_unit}} </td>
-       </ng-container>
        <!-- action -->
        <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
-        <td mat-cell *matCellDef="let element"><a (click)="openDialog('0ms', '0ms')">{{element.action}}</a></td>
+        <td mat-cell *matCellDef="let element"><a>{{element.action}}</a></td>
         <!-- <mat-menu #SelectionFilter="matMenu" class="filter-container">
           <div class="align-center">
              <div class="select-filter">

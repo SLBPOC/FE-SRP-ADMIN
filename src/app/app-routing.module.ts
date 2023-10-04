@@ -13,7 +13,8 @@ const routes: Routes = [
       // { path: 'wells', loadChildren: () => import('./wells/wells.module').then(m => m.WellsModule) },
       // { path: 'alerts', loadChildren: () => import('./alerts/alerts.module').then(m => m.AlertsModule) },
       // { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule), canActivate: [AuthGuard] },
-      { path: 'org', loadChildren: () => import('./organization/organization.module').then(m => m.OrganizationModule) }
+      { path: 'org', loadChildren: () => import('./organization/organization.module').then(m => m.OrganizationModule) },
+
     ]
   },
 ]

@@ -5,7 +5,8 @@ import { MatSort } from '@angular/material/sort';
 import { debounceTime, distinctUntilChanged, fromEvent, map, tap } from 'rxjs';
 import * as XLSX from 'xlsx';
 import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
-import { RemoveConfirmationDialog } from './components/remove-confirmation/remove-confirmation';
+import { RemoveOrganizationDialog } from './components/remove-organization/remove-organization';
+import { AddOrganizationDialog } from './components/add-organization/add-organization';
 
 
 export interface PeriodicElement {
@@ -39,7 +40,14 @@ export class OrganizationComponent {
   constructor(public dialog: MatDialog) {}
   
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void { 
-    this.dialog.open(RemoveConfirmationDialog, {
+    this.dialog.open(RemoveOrganizationDialog, {
+      width: '250px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
+  }
+  addOrgDialog(enterAnimationDuration: string, exitAnimationDuration: string): void { 
+    this.dialog.open(AddOrganizationDialog, {
       width: '250px',
       enterAnimationDuration,
       exitAnimationDuration,
