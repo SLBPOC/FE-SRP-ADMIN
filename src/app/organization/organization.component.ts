@@ -16,18 +16,19 @@ export interface PeriodicElement {
   realms: string;
   nimbus_group_ids: String;
   business_unit: Number;
-  action: String;
+  view: String;
+  remove: String;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  { organization_Name:'Alec Corp', type: 'Customer', status : 'Active', realms: 'alec.corp.com, slb.com', nimbus_group_ids: 'alec_group', business_unit: 5, action:'view'},
-  { organization_Name:'Agora', type: 'Service', status : 'Active', realms: 'agoraiot.com, slb.com', nimbus_group_ids: 'N/A', business_unit: 12, action:'view'},
-  { organization_Name:'SLB', type: 'Service', status : 'Active', realms: 'slb.com', nimbus_group_ids: 'N/A', business_unit: 0, action:'view'},
-  { organization_Name:'Initech', type: 'Service', status : 'Active', realms: 'initech.com', nimbus_group_ids: 'N/A', business_unit: 12, action:'view'},
-  { organization_Name:'Organization Name 1', type: 'Customer', status : 'Active', realms: 'on1.com, slb.com', nimbus_group_ids: 'on1_group, on1a_group', business_unit: 11, action:'view / Remove'},
-  { organization_Name:'Organization Name 2', type: 'Customer', status : 'Active', realms: 'on2.com, slb.com', nimbus_group_ids: 'on2_group', business_unit: 11, action:'view'},
-  { organization_Name:'Organization Name 3', type: 'Customer', status : 'Active', realms: 'on3.com, slb.com', nimbus_group_ids: 'on3_group, on3_pa_group', business_unit: 11, action:'view'},
-  { organization_Name:'Initech', type: 'Customer', status : 'Active', realms: 'on4.com', nimbus_group_ids: 'on4_group', business_unit: 11, action:'view'},
+  { organization_Name:'Alec Corp', type: 'Customer', status : 'Active', realms: 'alec.corp.com, slb.com', nimbus_group_ids: 'alec_group', business_unit: 5, view:'view', remove:''},
+  { organization_Name:'Agora', type: 'Service', status : 'Active', realms: 'agoraiot.com, slb.com', nimbus_group_ids: 'N/A', business_unit: 12, view:'view', remove:''},
+  { organization_Name:'SLB', type: 'Service', status : 'Active', realms: 'slb.com', nimbus_group_ids: 'N/A', business_unit: 0, view:'view', remove:' / remove'},
+  { organization_Name:'Initech', type: 'Service', status : 'Active', realms: 'initech.com', nimbus_group_ids: 'N/A', business_unit: 12, view:'view', remove:''},
+  { organization_Name:'Organization Name 1', type: 'Customer', status : 'Active', realms: 'on1.com, slb.com', nimbus_group_ids: 'on1_group, on1a_group', business_unit: 11, view:'view', remove:''},
+  { organization_Name:'Organization Name 2', type: 'Customer', status : 'Active', realms: 'on2.com, slb.com', nimbus_group_ids: 'on2_group', business_unit: 11, view:'view', remove:''},
+  { organization_Name:'Organization Name 3', type: 'Customer', status : 'Active', realms: 'on3.com, slb.com', nimbus_group_ids: 'on3_group, on3_pa_group', business_unit: 11, view:'view', remove:''},
+  { organization_Name:'Initech', type: 'Customer', status : 'Active', realms: 'on4.com', nimbus_group_ids: 'on4_group', business_unit: 11, view:'view', remove:''},
   
 ];
 
